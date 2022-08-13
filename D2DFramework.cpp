@@ -97,6 +97,15 @@ LRESULT D2DFramework::WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 	D2DFramework* pFramework = reinterpret_cast<D2DFramework*>((GetWindowLongPtrW(hwnd, GWLP_USERDATA)));
 	switch (msg)
 	{
+	case WM_LBUTTONDOWN:
+	{
+		WORD x = LOWORD(lp);
+		WORD y = HIWORD(lp);
+		std::ostringstream oss;
+		oss << x << " : " << y;
+		MessageBoxA(nullptr, oss.str().c_str(), "Coord", MB_OK);
+		break;
+	}
 	case WM_CLOSE:
 		DestroyWindow(hwnd);
 		return 0;
