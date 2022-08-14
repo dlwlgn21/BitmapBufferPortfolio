@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClInclude Include="BitmapExam.h" />
     <ClInclude Include="D2DFramework.h" />
+    <ClInclude Include="ImageExam.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BitmapExam.cpp" />
     <ClCompile Include="D2DFramework.cpp" />
+    <ClCompile Include="ImageExam.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

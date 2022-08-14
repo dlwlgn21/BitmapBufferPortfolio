@@ -12,7 +12,7 @@ public:
 	virtual HRESULT Initialize(HINSTANCE hInstance, int showCmd, LPCWSTR title = L"D2DExample", UINT width = 1024, UINT height = 768);
 
 	static LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp);
-
+	virtual void AssertIfFailed(HRESULT hr);
 protected:
 	virtual HRESULT CreateDeviceResources();
 

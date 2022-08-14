@@ -16,7 +16,6 @@ public:
 	const int BITMAP_BYTE_COUNT = 4;
 	const int UCMAX = 255;
 
-
 public:
 	virtual HRESULT Initialize(HINSTANCE hInstance, int showCmd, LPCWSTR title = L"D2DExample", UINT width = 1024, UINT height = 768) override;
 	virtual void Render() override;

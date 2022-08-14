@@ -118,6 +118,14 @@ LRESULT D2DFramework::WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 	return 1;
 }
 
+void D2DFramework::AssertIfFailed(HRESULT hr)
+{
+	if (FAILED(hr))
+	{
+		assert(false);
+	}
+}
+
 HRESULT D2DFramework::CreateDeviceResources()
 {
 	RECT wr;
